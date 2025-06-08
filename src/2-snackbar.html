@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/2-snackbar.css">
+    <link rel="stylesheet" href="https://thedigital.gov.ua/fonts">
+    <title>Snackbar</title>
+  </head>
+  <body>
+    <a href="./index.html" class="back">Back</a>
+
+    <form class="form">
+      <label class="delay-label">
+        Delay (ms)
+        <input type="number" name="delay" class="delay" required />
+      </label>
+      <fieldset class="promise-state">
+        <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+      </fieldset>
+
+      <button type="submit" class="notif-btn">Create notification</button>
+    </form>
+
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
+</html>
